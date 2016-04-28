@@ -4,6 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic', 'starter.Main', 'starter.UserList', 'starter.UserListDetail'])
+//cargar las dependencias para que funcionen.
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -23,6 +24,7 @@ angular.module('starter', ['ionic', 'starter.Main', 'starter.UserList', 'starter
   });
 })
 
+//expecifica la ruta de inicio de la aplicacion.
 .config(function($urlRouterProvider){  
   //Default Route for the whole app
   $urlRouterProvider.otherwise('/main');

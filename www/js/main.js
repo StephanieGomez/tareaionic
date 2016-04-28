@@ -11,5 +11,5 @@ angular.module('starter.Main', ['ionic'])
 })
 
 .controller("MainCtrl",function(){
-  console.log("Main Controller says: Hello World");
+  console.log("Main Controller says: Hola equipo /x");
 });

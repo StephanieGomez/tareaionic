@@ -7,12 +7,6 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
@@ -24,25 +18,26 @@
     <script src="js/page2.js"></script>
     <script src="js/UserListDetail.js"></script>
   </head>
+ <!--se manda la informacion del usuario pero que se tiene guardada en el item-->
   <body ng-app="starter">
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">{{item.user.name.first}} {{item.user.name.last}}</h1>
+        <h1 class="title">{{item.name.first}} {{item.name.last}}</h1>
       </ion-header-bar>
       <ion-content>
         <div class="list card">
           <div class="item item-avatar">
-            <img src="{{item.user.picture.thumbnail}} " />
-            <h2>{{item.user.name.first}} {{item.user.name.last}}</h2>
-            <p>{{item.user.location.city}} {{item.user.password}}</p>
+            <img src="{{item.picture.thumbnail}} " />
+            <h2>{{item.name.first}} {{item.name.last}}</h2>
+            <p>{{item.location.city}} {{item.password}}</p>
           </div>
           <div class="item item-icon-left">
             <i class="icon ion-email"></i>
-            {{item.user.email}}
+            {{item.email}}
           </div>
           <div class="item item-icon-left">
             <i class="icon ion-ios-telephone"></i>
-            {{item.user.phone}}
+            {{item.phone}}
           </div>
         </div>
       </ion-content>  

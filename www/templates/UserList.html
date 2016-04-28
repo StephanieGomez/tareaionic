@@ -7,12 +7,6 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
@@ -31,11 +25,12 @@
 
       </ion-header-bar>
       <ion-content>
+
         <ion-list>
           <ion-item class="item-avatar" ng-repeat="item in users" ui-sref='UserListDetail({index: $index})'>
-            <img src="{{item.user.picture.thumbnail}} " />
-            <h2>{{item.user.name.first}} {{item.user.name.last}}</h2>
-            <p>{{item.user.location.city}} {{item.user.password}}</p>
+            <img src="{{item.picture.thumbnail}} " />
+            <h2>{{item.first}} {{item.name.last}}</h2>
+            <p>{{item.location.city}} {{item.password}}</p>
           </ion-item>
         </ion-list>   
     </ion-content>
